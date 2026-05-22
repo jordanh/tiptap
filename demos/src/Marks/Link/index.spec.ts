@@ -3,7 +3,7 @@ import { expect, test } from '@playwright/test'
 import { getEditor, setEditorContent } from '../../../test/helpers.js'
 
 const demoName = 'Link'
-const frameworkPaths = ['React', 'Vue']
+const frameworkPaths = ['React', 'Vue', 'Svelte']
 const demoPath = '/src/Marks'
 
 async function paste(editor: ReturnType<typeof getEditor> extends Promise<infer T> ? T : never, payload: string) {
