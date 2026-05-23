@@ -11,7 +11,10 @@ import {
   serializeAttrsToHTMLString,
   serializeChildrenToHTMLString,
 } from '@tiptap/static-renderer/json/html-string'
-import { domOutputSpecToHTMLString, renderToHTMLString } from '@tiptap/static-renderer/pm/html-string'
+import {
+  domOutputSpecToHTMLString,
+  renderToHTMLString,
+} from '@tiptap/static-renderer/pm/html-string'
 import { describe, expect, it } from 'vitest'
 
 describe('static render json to string (no prosemirror)', () => {
@@ -317,7 +320,9 @@ describe('static render json to string (with prosemirror)', () => {
       extensions: [Document, Paragraph, Text, Link],
     })
 
-    expect(html).toContain('href="https://tiptap.dev/?q=&quot;&gt;&lt;img src=x onerror=alert(document.cookie)&gt;"')
+    expect(html).toContain(
+      'href="https://tiptap.dev/?q=&quot;&gt;&lt;img src=x onerror=alert(document.cookie)&gt;"',
+    )
   })
 
   it('escapes string DOM output specs as text content', () => {

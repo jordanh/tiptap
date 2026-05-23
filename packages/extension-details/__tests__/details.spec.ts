@@ -112,7 +112,10 @@ describe('Details', () => {
         Details.configure({
           renderToggleButton: ({ element, isOpen }) => {
             renderToggleButtonCallCount += 1
-            element.setAttribute('aria-label', isOpen ? 'Collapse details content' : 'Expand details content')
+            element.setAttribute(
+              'aria-label',
+              isOpen ? 'Collapse details content' : 'Expand details content',
+            )
           },
         }),
         DetailsSummary,
