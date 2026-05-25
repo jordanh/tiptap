@@ -1,5 +1,15 @@
 # @tiptap/extension-drag-handle
 
+## 3.23.7
+
+### Patch Changes
+
+- Updated dependencies [7c0499b]
+  - @tiptap/pm@3.23.7
+  - @tiptap/core@3.23.7
+  - @tiptap/extension-collaboration@3.23.7
+  - @tiptap/extension-node-range@3.23.7
+
 ## 3.23.6
 
 ### Patch Changes
